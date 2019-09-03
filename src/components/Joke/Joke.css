@@ -1,0 +1,112 @@
+.Joke {
+      display: flex;
+      border-bottom: 1px solid #eeeeee;
+      align-items: center;
+      justify-content: center;
+      padding: .5rem;
+}
+
+.Vote {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.8rem;
+      margin-left: 1rem
+}
+
+.fa-arrow-up, .fa-arrow-down {
+      font-size: .6rem;
+      cursor: pointer;
+      transition: all 0.3s;
+}
+
+.fa-arrow-up:hover {
+      animation-name: move-up;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+}
+
+@keyframes move-up {
+      0%,
+      50%,
+      100% {
+            transform: translateY(0);
+      }
+      25%,
+      75% {
+            transform: translateY(-3px);
+      }
+}
+.fa-arrow-down:hover {
+      animation-name: move-down;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+}
+
+@keyframes move-down {
+      0%,
+      50%,
+      100% {
+            transform: translateY(0);
+      }
+      25%,
+      75% {
+            transform: translateY(3px);
+      }
+}
+
+.Vote-rating {
+      margin:  0 0.2em;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      border-radius: 50%;
+      border: 2px solid pink;
+      text-align: center;
+      font-size: 1rem;
+      box-shadow: 0px 0px 9px -4px rgba(0,0,0,0.75);
+
+}
+
+.Vote-imgrotate {
+      transform: rotate(180deg);
+
+}
+
+.Joke-text {
+      width: 80%;
+      font-size: .8rem;
+}
+
+.Joke-smile {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      border-radius: 50%;
+      box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.75);
+
+}
+
+.Joke-smile:hover {
+      animation-name: spin;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+}
+
+@keyframes spin {
+      0% {
+            transform: rotate(0deg);
+      }
+      30% {
+            transform: rotate(20deg);
+      }
+      60% {
+            transform: rotate(0deg);
+      }
+      80% {
+            transform: rotate(10deg);
+      }
+      100% {
+            transform: rotate(0deg);
+      }
+}
